@@ -1,5 +1,6 @@
 <cfscript>
 	param name="args.size" default="normal"; // normal, or compact
+	param name="args.theme default="light"; // light or dark
 </cfscript>
 <cfoutput>
 	<cfif isnull( prc.recaptcha_inited )>
@@ -10,5 +11,6 @@
 		class="g-recaptcha"
 		data-sitekey="#getModuleSettings( "recaptcha" ).publicKey#"
 		data-size="#args.size#"
+		data-theme="#args.theme#
 	></div>
 </cfoutput>
