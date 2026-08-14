@@ -45,15 +45,16 @@ In any form you wish to add the reCaptcha widget use the following:
 	view="widget",
 	module="recaptcha",
 	args={
-		size = "normal" // normal or compact
+		size = "normal", // normal or compact
+		theme = "light" // light or dark
 	}
 )#
 </div>
 ```
 
-The only argument the widget receives is the `size` of the captcha:
-- `normal`
-- `compact`
+The widget view can receive the following arguments:
+- `size` ('normal' or 'compact') Optional. The size of the widget.
+- `theme` ('dark or 'light') Optional. The color theme of the widget.
 
 ### Validation
 
